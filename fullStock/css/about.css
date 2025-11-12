@@ -1,0 +1,54 @@
+/* Main */
+
+a {
+  text-decoration: none;
+}
+
+.about {
+  max-width: 48rem;
+  margin: 3rem auto;
+}
+
+.about__section {
+  margin-top: 3rem;
+}
+
+.about__main-title {
+  font-weight: 800;
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+}
+
+.about__text {
+  font-weight: 400;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 1.75rem;
+}
+
+.about__main-text {
+  margin-bottom: 3rem;
+}
+
+.about__history-title, .about__mission-title, .about__values-title {
+  margin-bottom: 1.5rem;
+}
+
+.about__values {
+  margin-bottom: 1.25rem;
+}
+
+.about__values-intro {
+  margin: 1.5rem 0 1.25rem 0;
+}
+
+.about__values-list li {
+  margin-left: 1.5rem;
+  list-style: disc;
+  line-height: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.about__closing {
+  line-height: 1.75rem;
+}

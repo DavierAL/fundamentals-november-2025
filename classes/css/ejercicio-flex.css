@@ -1,0 +1,14 @@
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}

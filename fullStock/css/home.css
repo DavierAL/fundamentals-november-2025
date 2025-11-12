@@ -1,0 +1,51 @@
+.home {
+  max-width: 80rem;
+  margin: 3rem auto;
+}
+
+.home__main-title {
+  font-weight: 800;
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+}
+
+.home__text {
+  font-weight: 400;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 1.75rem;
+}
+
+.home__section-title {
+    max-width: 48rem;
+}
+
+.home__products {
+    margin-top: 2.5rem;
+    max-width: 76rem;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card__product {
+    width: 24rem;
+    height: 35.5rem;
+}
+.card__product h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card__product p {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    line-height: 1.25rem;
+}
+
+.product__img {
+    width: 24rem;
+    height: 30rem;
+    border-radius: 0.75rem;
+    object-fit: cover;
+}
