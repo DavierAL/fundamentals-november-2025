@@ -13,8 +13,8 @@ body {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 1rem;
-  color: white;
-  background-color: #171717;
+  color:  #171717;
+  background-color: #ffffff;
 }
 
 html {
@@ -31,4 +31,12 @@ li {
 
 a {
   text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  width: 100% !important;
 }

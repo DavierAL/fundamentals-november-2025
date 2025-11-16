@@ -1,0 +1,201 @@
+:root {
+    /* Colores primarios de texto */
+    --color-text-primary: #171717;
+    --color-text-secondary: #60646c;
+
+    /* Colores de fondo y borde */
+    --color-bg-light: #f0f0f3;
+    --color-border-default: rgb(205, 206, 214); /* Simplificado de rgba(..., 1) */
+    --color-border-medium: #e0e0e0;
+
+    /* Radios de borde comunes */
+    --border-radius-sm: 0.50rem;
+    --border-radius-md: 0.75rem;
+}
+
+/* ============================
+   FOOTER - Estilos Base (Mobile First)
+============================ */
+.footer {
+    padding: 3rem 1rem 0;
+    width: 100%;
+}
+
+
+.footer__nav {
+    max-width: 1280px;
+    margin-bottom: 3rem;
+}
+
+.footer__nav h4 {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+    color: var(--color-text-primary);
+}
+
+
+.footer__nav_item {
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.8;
+    cursor: pointer;
+    margin-bottom: 1.25rem;
+}
+
+.footer__bolletin__text {
+    font-size: .875rem;
+    margin-bottom: 1rem;
+    color: var(--color-text-secondary);
+}
+
+.nav__input {
+    width: 14.375rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--color-border-default);
+    margin-bottom: 1rem;
+    border-radius: var(--border-radius-md); 
+}
+
+.nav-button {
+    width: 6.5625rem;
+    background-color: var(--color-bg-light);
+    color: var(--color-text-secondary);
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: var(--border-radius-sm);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.footer__hr {
+    margin-bottom: 1.5rem;
+}
+
+
+.nav__copyrigh {
+    text-align: center;
+    font-size: 0.8rem;
+    padding-bottom: 2rem;
+}
+
+/* =================================
+   Media Query: Mobile (< 39rem)
+================================= */
+@media (max-width: 39rem) {
+    .footer__nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .footer__nav__column:nth-child(1) {
+        grid-area: 1 / 1;
+    }
+
+    .footer__nav__column:nth-child(2) {
+        grid-area: 1 / 2;
+    }
+
+    .footer__nav__column:nth-child(3) {
+        grid-area: 2 / 1 / 2 / 3;
+    }
+
+    .footer__nav__column:nth-child(4) {
+        grid-area: 3 / 1 / 4 / 3;
+    }
+
+    .footer__bolletin h4 {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* ==================================
+   Media Query: Tablet/Mid-Screen (40rem to 79rem)
+================================== */
+@media (min-width: 40rem) and (max-width: 79rem) {
+    .footer {
+        padding: 3rem 1.5rem 0 1.5rem;
+    }
+
+    .footer__nav {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(14.3331rem, 1fr));
+        grid-template-areas:
+            "tienda compania conecta"
+            "boletin boletin boletin";
+
+        gap: 2rem;
+        margin-bottom: 2rem;
+        text-align: left;
+    }
+    
+    .footer__nav__column:nth-child(1) {
+        grid-area: tienda;
+    }
+
+    .footer__nav__column:nth-child(2) {
+        grid-area: compania;
+    }
+
+    .footer__nav__column:nth-child(3) {
+        grid-area: conecta;
+    }
+
+    .footer__bolletin {
+        grid-area: boletin;
+        max-width: 29rem;
+    }
+
+    .footer__nav>.nav__copyrigh {
+        grid-column: 1 / -1; 
+        padding-top: 2rem;
+        border-top: 1px solid var(--color-border-medium);
+    }
+
+    .nav-button {
+        width: 6.5625rem;
+    }
+
+    .nav__input {
+        width: 20.9375rem;
+        margin-right: 0.5rem;
+    }
+
+    .footer__bolletin h4 {
+        margin-bottom: 1.5rem;
+        font-weight: 500;
+        font-size: .875rem;
+    }
+
+    .footer__bolletin__text {
+        font-size: .875rem;
+        line-height: 1.25rem;
+    }
+
+    .footer__hr {
+        margin-bottom: 2rem;
+    }
+}
+
+/* ==================================
+   Media Query: Desktop (80rem and up)
+================================== */
+@media (min-width: 80rem) {
+    .footer {
+        padding: 3rem 2rem 0 2rem;
+    }
+
+    .footer__nav {
+        display: grid;
+        grid-template-columns: 14.6669rem 14.6669rem 14.6669rem 28rem;
+        gap: 1rem;
+        justify-content: center; 
+        margin: 4rem auto; 
+    }
+
+    .footer__hr {
+        margin-bottom: 2rem;
+    }
+}
