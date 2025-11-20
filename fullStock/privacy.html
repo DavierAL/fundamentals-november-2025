@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/privacy.css" />
   </head>
@@ -183,11 +184,48 @@
         </p>
       </section>
     </main>
-    <footer>
-      <div class="nav-container">
-        <span>Footer</span>
-        <!-- <nav></nav> -->
-      </div>
+    <footer class="footer">
+      <nav class="footer__nav">
+        <div class="footer__nav__column">
+          <h4>Tienda</h4>
+          <ul class="footer__nav__list">
+            <li class="footer__nav_item">Polos</li>
+            <li class="footer__nav_item">Tazas</li>
+            <li class="footer__nav_item">Stickers</li>
+          </ul>
+        </div>
+
+        <div class="footer__nav__column">
+          <h4>Compañía</h4>
+          <ul class="footer__nav__list">
+            <li class="footer__nav_item">Quienes somos</li>
+            <li class="footer__nav_item">Términos y condiciones</li>
+            <li class="footer__nav_item">Privacidad</li>
+          </ul>
+        </div>
+
+        <div class="footer__nav__column">
+          <h4>Conecta</h4>
+          <ul class="footer__nav__list">
+            <li class="footer__nav_item">Whatsapp</li>
+            <li class="footer__nav_item">Facebook</li>
+            <li class="footer__nav_item">Instagram</li>
+          </ul>
+        </div>
+
+        <div class="footer__bolletin footer__nav__column">
+          <h4>Suscríbete a nuestro boletín</h4>
+          <p class="footer__bolletin__text">
+            Recibe las últimas ofertas y descuentos en tu correo
+            <br />semanalmente.
+          </p>
+
+          <input class="nav__input" type="text" />
+          <button class="nav-button">Suscribirse</button>
+        </div>
+      </nav>
+      <hr class="footer__hr" />
+      <p class="nav__copyrigh">Todos los derechos reservados © Full Stock</p>
     </footer>
   </body>
 </html>
