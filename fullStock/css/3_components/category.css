@@ -1,50 +1,3 @@
-.hero {
-  max-width: 100%;
-  height: 34rem;
-  background-image: url("/fullStock/images/herobg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 0.5);
-  background-blend-mode: multiply;
-  color: white;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero__container {
-  text-align: center;
-  padding: 0 1rem;
-}
-
-.hero__title {
-  font-weight: 700;
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.hero__text {
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  margin-bottom: 2rem;
-}
-
-.hero__button {
-  background-color: rgba(91, 91, 214, 1);
-  padding: 0.6875rem 2rem;
-  color: white;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  text-decoration: none;
-  display: inline-block;
-}
-
 .categories__section {
   margin: 3rem auto;
 }
@@ -102,60 +55,9 @@
   color: var(--secondary-foreground);
 }
 
-.quality__section {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  background-color: rgba(0, 0, 85, 0.02);
-}
 
-.quality__container {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 2rem;
-}
-
-.quality__title {
-  text-align: center;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  margin-bottom: 3rem;
-}
-
-.quality__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.quality__item-icon {
-  margin-bottom: 1.5rem;
-}
-
-.quality__item-title {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  margin-bottom: 0.5rem;
-}
-
-.quality__item--text {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  margin-bottom: 0.5rem;
-  color: var(--secondary-foreground);
-}
 
 @media (min-width: 40rem) {
-  .hero__title {
-    font-size: 3.75rem;
-    line-height: 3.75rem;
-  }
-
-  .hero__text {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .category__products {
     display: flex;
     flex-direction: row;
@@ -169,18 +71,6 @@
   .category__product-img {
     aspect-ratio: 4 / 5;
   }
-
-  .quality__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0 auto;
-  }
-
-  .quality__item {
-    text-align: center;
-  }
-
-
 }
 
 @media (min-width: 64rem) {
@@ -201,21 +91,5 @@
 
   .category__product-img {
     aspect-ratio: 4 / 5;
-  }
-
-  .quality__section {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
-  .quality__container {
-    max-width: 78rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 0 auto;
-  }
-
-  .quality__item {
-    text-align: center;
   }
 }
