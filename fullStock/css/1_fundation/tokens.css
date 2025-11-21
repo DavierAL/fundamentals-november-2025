@@ -1,14 +1,14 @@
 /* styles/1_foundation/tokens.css */
 /* --- TIPOGRAFÍA --- */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Protest+Guerrilla&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
- 
+
 /* --- COLORES --- */
 :root {
   /* Colores base */
   --white: hsl(0 0% 100%);
   --black: hsl(0 0% 0%);
   --base-background: var(--white);
- 
+
   --accent-1: hsl(240 33% 99%);
   --accent-2: hsl(240 33% 98%);
   --accent-3: hsl(240 33% 97%);
@@ -34,7 +34,7 @@
   --accent-a11: hsl(240 67% 34% / 0.67);
   --accent-a12: hsl(240 85% 14% / 0.85);
   --accent-contrast: var(--white);
- 
+
   --neutral-1: hsl(240 9% 99%);
   --neutral-2: hsl(240 8% 98%);
   --neutral-3: hsl(240 7% 95%);
@@ -60,7 +60,7 @@
   --neutral-a11: hsl(240 100% 8% / 0.62);
   --neutral-a12: hsl(240 100% 4% / 0.89);
   --neutral-contrast: var(--white);
- 
+
   /* Tokens de color */
   --background: var(--base-background);
   --foreground: var(--neutral-12);
@@ -79,7 +79,7 @@
   --primary-background-hover: var(--accent-10);
   --secondary-background-hover: var(--neutral-4);
 }
- 
+
 :root {
   /* Font stacks */
   --family-text: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -87,4 +87,86 @@
   --family-display: 'Protest Guerrilla', 'Protest Strike', 'Stencil', 'Impact', sans-serif;
   --family-code: 'Source Code Pro', 'Menlo', 'Consolas', 'Monaco', 'Courier New', monospace;
   --family-emphasis: 'Lora', 'Georgia', 'Palatino Linotype', 'Book Antiqua', 'Times New Roman', serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  ::root {
+    /* Colores base */
+    --white: hsl(0 0% 100%);
+    --black: hsl(0 0% 0%);
+    --base-background: var(--white);
+
+    --accent-1: hsl(240 33% 99%);
+    --accent-2: hsl(240 33% 98%);
+    /* ...otros colores base */
+
+    /* Tokens de color */
+    --background: var(--base-background);
+    --foreground: var(--neutral-12);
+    --accent-background: var(--accent-3);
+    --accent-foreground: var(--accent-11);
+    --muted-background: var(--neutral-a2);
+
+    /* ...Tokens de color */
+  }
+
+  /* Dark Mode */
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --base-background: var(--neutral-1);
+
+      --accent-1: hsl(240 22% 10%);
+      --accent-2: hsl(244 25% 12%);
+      --accent-3: hsl(237 38% 20%);
+      --accent-4: hsl(236 45% 27%);
+      --accent-5: hsl(237 41% 32%);
+      --accent-6: hsl(239 36% 37%);
+      --accent-7: hsl(240 34% 44%);
+      --accent-8: hsl(241 36% 52%);
+      --accent-9: hsl(240 60% 60%);
+      --accent-10: hsl(242 64% 64%);
+      --accent-11: hsl(246 100% 83%);
+      --accent-12: hsl(242 94% 94%);
+      --accent-a1: hsl(240 99% 60% / 0.05);
+      --accent-a2: hsl(244 94% 64% / 0.09);
+      --accent-a3: hsl(237 100% 66% / 0.23);
+      --accent-a4: hsl(236 100% 65% / 0.35);
+      --accent-a5: hsl(237 98% 67% / 0.42);
+      --accent-a6: hsl(239 97% 71% / 0.48);
+      --accent-a7: hsl(240 99% 73% / 0.56);
+      --accent-a8: hsl(240 99% 74% / 0.67);
+      --accent-a9: hsl(240 99% 71% / 0.83);
+      --accent-a10: hsl(242 100% 74% / 0.86);
+      --accent-a11: hsl(246 100% 83%);
+      --accent-a12: hsl(242 100% 94%);
+      --accent-contrast: var(--white);
+
+      --neutral-1: hsl(240 6% 7%);
+      --neutral-2: hsl(220 6% 10%);
+      --neutral-3: hsl(225 6% 14%);
+      --neutral-4: hsl(210 7% 16%);
+      --neutral-5: hsl(214 7% 19%);
+      --neutral-6: hsl(213 8% 23%);
+      --neutral-7: hsl(213 8% 28%);
+      --neutral-8: hsl(212 8% 38%);
+      --neutral-9: hsl(219 6% 44%);
+      --neutral-10: hsl(222 5% 49%);
+      --neutral-11: hsl(216 7% 71%);
+      --neutral-12: hsl(220 9% 94%);
+      --neutral-a1: hsl(0 0% 0%);
+      --neutral-a2: hsl(184 63% 91% / 0.04);
+      --neutral-a3: hsl(211 66% 92% / 0.08);
+      --neutral-a4: hsl(198 73% 90% / 0.11);
+      --neutral-a5: hsl(208 95% 92% / 0.15);
+      --neutral-a6: hsl(208 91% 92% / 0.19);
+      --neutral-a7: hsl(208 100% 93% / 0.25);
+      --neutral-a8: hsl(208 100% 93% / 0.36);
+      --neutral-a9: hsl(216 88% 93% / 0.43);
+      --neutral-a10: hsl(220 86% 95% / 0.48);
+      --neutral-a11: hsl(212 87% 97% / 0.71);
+      --neutral-a12: hsl(220 100% 99% / 0.94);
+      --neutral-contrast: var(--white);
+    }
+  }
 }
