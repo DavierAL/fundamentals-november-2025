@@ -18,6 +18,11 @@ body {
   line-height: 1.5;
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #171717;
+  background-color: #ffffff;
 }
 /* 6. Improve media defaults */
 img, picture, video, canvas, svg {
@@ -38,4 +43,21 @@ p {
 }
 h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
+}
+
+
+html {
+  font-size: 100%;
+}
+
+ul {
+  padding: 0;
+}
+ 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
