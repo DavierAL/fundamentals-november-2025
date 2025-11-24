@@ -1,0 +1,34 @@
+.quality__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quality__item-icon {
+    margin-bottom: 1.5rem;
+}
+
+.quality__item-title {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.quality__item--text {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-foreground);
+}
+
+@media (min-width: 40rem) {
+    .quality__item {
+        text-align: center;
+    }
+}
+
+@media (min-width: 64rem) {
+    .quality__item {
+        text-align: center;
+    }
+}

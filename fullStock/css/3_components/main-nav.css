@@ -1,0 +1,12 @@
+.main__nav {
+  display: flex;
+  display: none;
+  height: 100%;
+  align-items: center;
+}
+
+@media (min-width: 40rem) {
+  .main__nav {
+    display: flex;
+  }
+}

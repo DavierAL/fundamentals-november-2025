@@ -1,0 +1,33 @@
+.nav__input {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid var(--border);
+  border-radius: .75rem;
+  width: 13.4375rem;
+  display: inline-block;
+}
+
+.nav-button {
+  padding: .625rem .875rem;
+  background-color: var(--secondary-background);
+  color: var(--secondary-foreground);
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+  font-size: .875rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+
+@media (min-width: 40rem) {
+
+}
+
+@media (min-width: 64rem) {
+  .newsletter-section input.nav__input {
+    width: auto; 
+    min-width: 250px;
+    margin-bottom: 0;
+  }
+}

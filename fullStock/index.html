@@ -7,15 +7,16 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <header class="header container">
-      <div class="header__logo">
+    <header class="main-header container">
+      <a href="#" class="header__logo">
         <img src="./images/Logo.jpg" width="160px" height="40px" alt="" />
-      </div>
-      <nav class="header__nav">
-        <ul class="header__nav__list">
-          <li class="header__nav__item">Polos</li>
-          <li class="header__nav__item">Tazas</li>
-          <li class="header__nav__item">Stickers</li>
+      </a>
+        
+      <nav class="main__nav">
+        <ul class="nav__list"></ul>
+          <li class="nav__item">Polos</li>
+          <li class="nav__item">Tazas</li>
+          <li class="nav__item">Stickers</li>
         </ul>
       </nav>
       <div class="header__cart">
@@ -36,17 +37,17 @@
     </section>
 
     <main class="home">
-      <div class="categories__section container">
-        <section class="categories">
-          <h1 class="category__title">Compra por categoría</h1>
-          <p class="category__text">
+      <div class="categories__section">
+        <section class="by-category container section-sm">
+          <h1 class="by-category__title">Compra por categoría</h1>
+          <p class="by-category__text">
             Explora nuestra selección de productos especialmente diseñados para
             desarrolladores web. Encuentra lo que buscas navegando por nuestras
             categorías de polos, tazas, stickers y más.
           </p>
         </section>
 
-        <section class="category__products">
+        <section class="categories__container container section-sm">
           <a href="#" class="category__product">
             <div class="category__img">
               <img
@@ -100,7 +101,7 @@
         </section>
       </div>
 
-      <section class="quality__section container">
+      <section class="quality__section container section-sm">
         <h2 class="quality__title">Nuestra Promesa de Calidad</h2>
         <div>
           <div class="quality__container">
@@ -190,7 +191,7 @@
     </main>
 
     <hr class="footer__hr-top" />
-    <footer class="footer container">
+    <footer class="footer container section-sm">
       <nav class="footer__nav">
         <div class="footer__nav__column">
           <h4 class="footer__nav__title">Tienda</h4>
@@ -220,14 +221,14 @@
         </div>
       </nav>
 
-      <div class="footer__bolletin footer__nav__column">
-        <h4 class="footer__bolletin__title">Suscríbete a nuestro boletín</h4>
-        <p class="footer__bolletin__text">
+      <div class="newsletter-form footer__nav__column">
+        <h4 class="newsletter-form__title">Suscríbete a nuestro boletín</h4>
+        <p class="newsletter-form__text">
           Recibe las últimas ofertas y descuentos en tu correo
           <br />semanalmente.
         </p>
 
-        <input class="nav__input" type="text" />
+        <input class="nav__input" type="text"/>
         <button class="nav-button">Suscribirse</button>
       </div>
 

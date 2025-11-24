@@ -1,0 +1,29 @@
+.categories__section {
+    margin: 3rem auto;
+}
+
+.categories__container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 40rem) {
+    .categories__container {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+@media (min-width: 64rem) {
+    .categories__section {
+        max-width: 80rem;
+    }
+
+    .categories__container {
+        display: flex;
+        flex-direction: row;
+    }
+}

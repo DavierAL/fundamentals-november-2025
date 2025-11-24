@@ -1,0 +1,6 @@
+.main-header {
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

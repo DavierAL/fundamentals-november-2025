@@ -1,0 +1,31 @@
+
+.newsletter-form__title {
+  color: var(--foreground);
+  font-weight: bold;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  letter-spacing: 0rem;
+  margin-bottom: 1.5rem;
+}
+
+.newsletter-form__text {
+  font-weight: 400;
+  font-size: .875rem;
+  color: var(--muted-foreground);
+  line-height: 1.25rem;
+  letter-spacing: 0rem;
+  margin-bottom: .5rem;
+}
+
+
+@media (min-width: 40rem) {
+
+}
+
+@media (min-width: 64rem) {
+  .newsletter-section {
+    max-width: 450px;
+    margin-top: 0;
+    flex-shrink: 1; 
+  }
+}

@@ -1,0 +1,35 @@
+.footer__nav__column {
+    margin-bottom: 30px;
+    min-width: 156px;
+}
+
+
+.footer__nav__column:nth-child(-n+3) {
+    flex-grow: 1;
+}
+
+
+.footer__nav-list,
+.footer__nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.footer__nav_item {
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    letter-spacing: 0rem;
+    color: var(--muted-foreground);
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+@media (min-width: 64rem) {
+
+    .footer__nav__column {
+        min-width: 14.625rem;
+    }
+}

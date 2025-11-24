@@ -1,0 +1,8 @@
+.nav__item {
+padding: 0.75rem;
+}
+
+.nav__item:hover {
+ background-color: var(--accent-background);
+ transition: all 0.8s ease-out;  
+} 
