@@ -19,7 +19,7 @@
 @media (min-width: 40rem) {
     .quality__container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
         margin: 0 auto;
     }
 }
@@ -33,7 +33,7 @@
     .quality__container {
         max-width: 78rem;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
         margin: 0 auto;
     }
 }
