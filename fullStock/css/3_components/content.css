@@ -1,0 +1,154 @@
+/* content.css */
+
+/* Contenedor principal para restringir el ancho y centrar, como se sugiere en IMG */
+.content {
+    max-width: 800px;
+    /* Ajustable según tu diseño */
+    margin: 0 auto;
+    font-family: sans-serif;
+    /* O la fuente que uses en tu sitio */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- ENCABEZADOS (H1 - H4) --- */
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #007bff;
+    /* Detalle azul visto en la imagen */
+    padding-bottom: 0.5rem;
+}
+
+.content h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    background-color: #fff5f0;
+    /* Fondo sutil visto en H2 */
+    padding: 0.5rem;
+}
+
+.content h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.content h4 {
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    color: #555;
+}
+
+/* --- TEXTO Y ENLACES --- */
+.content p {
+    margin-bottom: 1.2rem;
+}
+
+.content strong {
+    font-weight: 700;
+}
+
+.content em {
+    font-style: italic;
+    color: #555;
+}
+
+.content a {
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* --- LISTAS (UL, OL, LI) --- */
+.content ul,
+.content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+}
+
+.content li {
+    margin-bottom: 0.5rem;
+}
+
+/* --- CÓDIGO (CODE, PRE) --- */
+.content code {
+    background-color: #f4f4f4;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.9em;
+}
+
+.content pre {
+    background-color: #1e1e1e;
+    /* Estilo oscuro visto en la imagen */
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+}
+
+.content pre code {
+    background-color: transparent;
+    color: inherit;
+    padding: 0;
+}
+
+/* --- CITAS (BLOCKQUOTE) --- */
+.content blockquote {
+    background-color: #fff9f0;
+    /* Fondo cálido visto en la imagen */
+    border-left: 5px solid #ffcc00;
+    /* Borde de acento */
+    margin: 1.5rem 0;
+    padding: 1rem 1.5rem;
+    font-style: italic;
+}
+
+/* --- TABLAS --- */
+.content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.content table th,
+.content table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.content table th {
+    font-weight: bold;
+}
+
+/* --- IMÁGENES Y FIGURAS --- */
+.content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.content figure {
+    margin: 1.5rem 0;
+}
+
+.content figcaption {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+/* --- SEPARADORES (HR) --- */
+.content hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 2rem 0;
+}

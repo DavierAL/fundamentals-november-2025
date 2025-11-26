@@ -2,9 +2,10 @@
 @import url('1_fundation/tokens.css');
 @import url('1_fundation/reset.css');
 @import url('1_fundation/global.css');
- 
+
 @import url('2_layout/container.css');
 @import url('2_layout/section.css');
+@import url('2_layout/vertical-page-layout.css');
 
 @import url('3_components/button.css');
 @import url('3_components/header.css');
@@ -23,6 +24,4 @@
 @import url('3_components/by-category.css');
 @import url('3_components/input.css');
 
-
- 
 @import url('4_utilities/utilities.css');

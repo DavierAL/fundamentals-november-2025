@@ -1,10 +1,20 @@
-.footer__nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 80rem;
-    margin: 2rem auto;
+.footer {
+    width: 100%;
 }
+
+.footer__nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.newsletter-form {
+    grid-column: 1 / -1;
+    margin-top: 1rem;
+
+}
+
 
 .footer__nav__title {
     font-size: .875rem;
@@ -27,32 +37,23 @@
 @media (min-width: 40rem) {
     .footer__nav {
         padding-top: 3rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (min-width: 64rem) {
-
-    .footer {
-        display: flex;
-        flex-wrap: wrap;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+    .footer__nav {
+        grid-template-columns: 1fr 1fr 1fr 1.5fr;
     }
 
-    .footer__nav {
-        padding: 0rem 1rem;
+    .newsletter-form {
+        grid-column: auto;
     }
 
     .nav__copyrigh {
-        flex-basis: 100%;
         text-align: center;
     }
-
 }
-
 
 .footer__hr {
     flex-basis: 100%;

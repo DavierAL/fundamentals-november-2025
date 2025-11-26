@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quienes somos | Full Stock</title>
-    <link rel="stylesheet" href="./css/index.css" />
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quienes somos | Full Stock</title>
+  <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<div class="vertical-page-layout">
+
   <body>
-    <header class="header">
-      <div class="header__logo">
+    <header class="main-header container">
+      <a href="#" class="header__logo">
         <img src="./images/Logo.jpg" width="160px" height="40px" alt="" />
-      </div>
-      <nav class="header__nav">
-        <ul class="header__nav__list">
-          <li class="header__nav_item">Polos</li>
-          <li class="header__nav_item">Tazas</li>
-          <li class="header__nav_item">Stickers</li>
+      </a>
+
+      <nav class="main__nav">
+        <ul class="nav__list"></ul>
+        <li class="nav__item">Polos</li>
+        <li class="nav__item">Tazas</li>
+        <li class="nav__item">Stickers</li>
         </ul>
       </nav>
       <div class="header__cart">
@@ -23,7 +28,19 @@
       </div>
     </header>
     <hr />
-    <main class="about">
+
+    <section class="hero">
+      <div class="hero__container">
+        <h2 class="hero__title">Nuevos productos disponibles</h2>
+        <p class="hero__text">
+          Un pequeño lote de increíbles productos acaba de llegar.
+          <br />Agrega tus favoritos al carrito antes que se agoten
+        </p>
+        <button class="button button--xl">Compra ahora</button>
+      </div>
+    </section>
+
+    <main class="about content">
       <section class="about__section about__main">
         <h1 class="about__main-title">Quienes somos</h1>
         <p class="about__text about__main-text">
@@ -94,17 +111,17 @@
       <p class="about__closing">
         Gracias por elegir Full Stock. ¡Te invitamos a explorar
         <!-- Todo: Agrega referencia correcta para 'nuestro catálogo'-->
-        <a href="#" target="_blank" rel="noopener noreferrer"
-          >nuestro catálogo</a
-        >
+        <a href="#" target="_blank" rel="noopener noreferrer">nuestro catálogo</a>
         y descubrir todo lo que tenemos para ofrecer!
       </p>
     </main>
-    <footer class="footer">
+    <hr class="footer__hr-top" />
+    <footer class="footer container section-sm">
       <nav class="footer__nav">
+
         <div class="footer__nav__column">
-          <h4>Tienda</h4>
-          <ul class="footer__nav__list">
+          <h4 class="footer__nav__title">Tienda</h4>
+          <ul class="footer__nav-list">
             <li class="footer__nav_item">Polos</li>
             <li class="footer__nav_item">Tazas</li>
             <li class="footer__nav_item">Stickers</li>
@@ -112,16 +129,17 @@
         </div>
 
         <div class="footer__nav__column">
-          <h4>Compañía</h4>
+          <h4 class="footer__nav__title">Compañía</h4>
           <ul class="footer__nav__list">
-            <li class="footer__nav_item">Quienes somos</li>
-            <li class="footer__nav_item">Términos y condiciones</li>
-            <li class="footer__nav_item">Privacidad</li>
+            <li class="footer__nav_item"><a href="/fullStock/about.html">Quienes somos</a></li>
+            <li class="footer__nav_item"><a href="/fullStock/terms.html">Términos y
+                condiciones</a></li>
+            <li class="footer__nav_item"><a href="/fullStock/privacy.html">Privacidad</a></li>
           </ul>
         </div>
 
         <div class="footer__nav__column">
-          <h4>Conecta</h4>
+          <h4 class="footer__nav__title">Conecta</h4>
           <ul class="footer__nav__list">
             <li class="footer__nav_item">Whatsapp</li>
             <li class="footer__nav_item">Facebook</li>
@@ -129,19 +147,21 @@
           </ul>
         </div>
 
-        <div class="footer__bolletin footer__nav__column">
-          <h4>Suscríbete a nuestro boletín</h4>
-          <p class="footer__bolletin__text">
-            Recibe las últimas ofertas y descuentos en tu correo
-            <br />semanalmente.
+        <div class="newsletter-form footer__nav__column">
+          <h4 class="newsletter-form__title">Suscríbete a nuestro boletín</h4>
+          <p class="newsletter-form__text">
+            Recibe las últimas ofertas y descuentos en tu correo semanalmente.
           </p>
-
-          <input class="nav__input" type="text" />
+          <input class="nav__input" type="text" placeholder="correo@dominio.com" />
           <button class="nav-button">Suscribirse</button>
         </div>
+
       </nav>
+
       <hr class="footer__hr" />
       <p class="nav__copyrigh">Todos los derechos reservados © Full Stock</p>
     </footer>
   </body>
+</div>
+
 </html>

@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/privacy.css" />
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<div class="vertical-page-layout">
+
   <body>
-    <header class="header">
-      <div class="header__logo">
+    <header class="main-header container">
+      <a href="#" class="header__logo">
         <img src="./images/Logo.jpg" width="160px" height="40px" alt="" />
-      </div>
-      <nav class="header__nav">
-        <ul class="header__nav__list">
-          <li class="header__nav_item">Polos</li>
-          <li class="header__nav_item">Tazas</li>
-          <li class="header__nav_item">Stickers</li>
+      </a>
+
+      <nav class="main__nav">
+        <ul class="nav__list"></ul>
+        <li class="nav__item">Polos</li>
+        <li class="nav__item">Tazas</li>
+        <li class="nav__item">Stickers</li>
         </ul>
       </nav>
       <div class="header__cart">
@@ -26,7 +28,18 @@
       </div>
     </header>
     <hr />
-    <main>
+
+    <section class="hero">
+      <div class="hero__container">
+        <h2 class="hero__title">Nuevos productos disponibles</h2>
+        <p class="hero__text">
+          Un pequeño lote de increíbles productos acaba de llegar.
+          <br />Agrega tus favoritos al carrito antes que se agoten
+        </p>
+        <button class="button button--xl">Compra ahora</button>
+      </div>
+    </section>
+    <main class="content">
       <section class="privacy__section privacy">
         <h1 class="privacy__title">Política de Privacidad</h1>
         <p class="privacy__updated">
@@ -56,9 +69,7 @@
           </li>
           <li class="privacy__list-item privacy__responsable-item">
             <strong>Correo electrónico de contacto:</strong>
-            <a href="mailto:privacidad-fullstock@codeable.la"
-              >privacidad-fullstock@codeable.la</a
-            >
+            <a href="mailto:privacidad-fullstock@codeable.la">privacidad-fullstock@codeable.la</a>
           </li>
         </ul>
       </section>
@@ -93,8 +104,9 @@
         </p>
         <ul class="privacy__list">
           <li class="privacy__list-item">
-            <strong>Gestionar tu carrito de compras: </strong
-            >El <code>`full-stock-session-id` </code>nos permite mantener los
+            <strong>Gestionar tu carrito de compras: </strong>El <code>`full-stock-session-id` </code>nos permite
+            mantener
+            los
             productos que has agregado a tu carrito durante tu visita.
           </li>
           <li class="privacy__list-item">
@@ -156,8 +168,7 @@
           Para ejercer cualquiera de estos derechos (conocidos como derechos
           ARCO), puedes enviar una solicitud a nuestro correo electrónico
           <a href="mailto:privacidad-fullstock@codeable.la">
-            privacidad-fullstock@codeable.la</a
-          >, adjuntando una copia de tu DNI.
+            privacidad-fullstock@codeable.la</a>, adjuntando una copia de tu DNI.
         </p>
       </section>
 
@@ -184,11 +195,14 @@
         </p>
       </section>
     </main>
-    <footer class="footer">
+
+    <hr class="footer__hr-top" />
+    <footer class="footer container section-sm">
       <nav class="footer__nav">
+
         <div class="footer__nav__column">
-          <h4>Tienda</h4>
-          <ul class="footer__nav__list">
+          <h4 class="footer__nav__title">Tienda</h4>
+          <ul class="footer__nav-list">
             <li class="footer__nav_item">Polos</li>
             <li class="footer__nav_item">Tazas</li>
             <li class="footer__nav_item">Stickers</li>
@@ -196,16 +210,17 @@
         </div>
 
         <div class="footer__nav__column">
-          <h4>Compañía</h4>
+          <h4 class="footer__nav__title">Compañía</h4>
           <ul class="footer__nav__list">
-            <li class="footer__nav_item">Quienes somos</li>
-            <li class="footer__nav_item">Términos y condiciones</li>
-            <li class="footer__nav_item">Privacidad</li>
+            <li class="footer__nav_item"><a href="/fullStock/about.html">Quienes somos</a></li>
+            <li class="footer__nav_item"><a href="/fullStock/terms.html">Términos y
+                condiciones</a></li>
+            <li class="footer__nav_item"><a href="/fullStock/privacy.html">Privacidad</a></li>
           </ul>
         </div>
 
         <div class="footer__nav__column">
-          <h4>Conecta</h4>
+          <h4 class="footer__nav__title">Conecta</h4>
           <ul class="footer__nav__list">
             <li class="footer__nav_item">Whatsapp</li>
             <li class="footer__nav_item">Facebook</li>
@@ -213,19 +228,21 @@
           </ul>
         </div>
 
-        <div class="footer__bolletin footer__nav__column">
-          <h4>Suscríbete a nuestro boletín</h4>
-          <p class="footer__bolletin__text">
-            Recibe las últimas ofertas y descuentos en tu correo
-            <br />semanalmente.
+        <div class="newsletter-form footer__nav__column">
+          <h4 class="newsletter-form__title">Suscríbete a nuestro boletín</h4>
+          <p class="newsletter-form__text">
+            Recibe las últimas ofertas y descuentos en tu correo semanalmente.
           </p>
-
-          <input class="nav__input" type="text" />
+          <input class="nav__input" type="text" placeholder="correo@dominio.com" />
           <button class="nav-button">Suscribirse</button>
         </div>
+
       </nav>
+
       <hr class="footer__hr" />
       <p class="nav__copyrigh">Todos los derechos reservados © Full Stock</p>
     </footer>
   </body>
+</div>
+
 </html>
