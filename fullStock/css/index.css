@@ -6,6 +6,7 @@
 @import url('2_layout/container.css');
 @import url('2_layout/section.css');
 @import url('2_layout/vertical-page-layout.css');
+@import url('2_layout/sidebar-layout.css');
 
 @import url('3_components/button.css');
 @import url('3_components/header.css');
@@ -23,5 +24,8 @@
 @import url('3_components/nav-item.css');
 @import url('3_components/by-category.css');
 @import url('3_components/input.css');
+@import url('3_components/price-filter.css');
+@import url('3_components/category-catalog.css');
+@import url('3_components/products-grid.css');
 
 @import url('4_utilities/utilities.css');

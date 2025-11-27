@@ -1,0 +1,12 @@
+.category-catalog__title {
+    margin-bottom: 1rem;
+    color: var(--foreground);
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+.category-catalog__description {
+    color: var(--muted-foreground);
+    font-size: .875rem;
+    line-height: 1.25rem;
+}

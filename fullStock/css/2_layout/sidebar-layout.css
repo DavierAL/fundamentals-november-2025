@@ -1,0 +1,9 @@
+.sidebar-layout {
+    display: grid;
+}
+
+@media (min-width: 48rem) {
+    .sidebar-layout {
+        grid-template-columns: 30% 70%;
+    }
+}
