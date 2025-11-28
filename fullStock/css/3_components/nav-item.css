@@ -1,8 +1,10 @@
 .nav__item {
-padding: 0.75rem;
+    padding: 0.75rem;
+    font-size: .875rem;
+    color: var(--muted-foreground);
 }
 
 .nav__item:hover {
- background-color: var(--accent-background);
- transition: all 0.8s ease-out;  
-} 
+    background-color: var(--accent-background);
+    transition: all 0.8s ease-out;
+}

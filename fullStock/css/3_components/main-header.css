@@ -1,6 +1,9 @@
-.main-header {
-  height: 3rem;
+.main-header {}
+
+.main-header__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  border-bottom: 1px solid var(--separator);
 }

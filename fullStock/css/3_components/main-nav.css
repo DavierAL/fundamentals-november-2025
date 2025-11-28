@@ -1,12 +1,17 @@
 .main__nav {
   display: flex;
-  display: none;
-  height: 100%;
   align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 40rem) {
   .main__nav {
     display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 2.5rem;
+
   }
 }
