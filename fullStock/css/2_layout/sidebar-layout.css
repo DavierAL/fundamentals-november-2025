@@ -5,5 +5,18 @@
 @media (min-width: 48rem) {
     .sidebar-layout {
         grid-template-columns: 30% 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media (min-width: 64rem) {
+    .sidebar-layout {
+        grid-template-columns: 30% 70%;
+        flex-direction: row;
+        gap: 2rem;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
     }
 }

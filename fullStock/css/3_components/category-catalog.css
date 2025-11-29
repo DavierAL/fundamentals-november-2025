@@ -1,3 +1,14 @@
+.category-products {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.category-catalog-header {
+    border-bottom: 1px solid var(--separator);
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
 .category-catalog__title {
     margin-bottom: 1rem;
     color: var(--foreground);
@@ -9,4 +20,5 @@
     color: var(--muted-foreground);
     font-size: .875rem;
     line-height: 1.25rem;
+
 }

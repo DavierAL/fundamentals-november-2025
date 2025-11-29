@@ -1,4 +1,11 @@
-.main-header {}
+.main-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 1);
+  border-bottom: 1px solid var(--separator);
+}
 
 .main-header__top {
   display: flex;
