@@ -2,11 +2,11 @@ body {
   font-family: var(--family-text);
   font-size: 1rem;
   line-height: 1.5rem;
- 
+
   color: var(--foreground);
   background-color: var(--background);
 }
- 
+
 h1,
 h2,
 h3,
@@ -15,11 +15,47 @@ h5,
 h6 {
   font-family: var(--family-heading);
 }
- 
+
 code {
   font-family: var(--family-monospace);
 }
- 
+
 em {
   font-family: var(--family-emphasis);
+}
+
+label {
+  font-weight: 500;
+  font-size: .875rem;
+  color: var(--foreground);
+}
+
+input,
+select,
+textarea {
+  padding: .5rem .75rem;
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: var(--foreground);
+  background-color: var(--background);
+  border-radius: .75rem;
+  border: .125rem solid var(--separator);
+}
+
+select,
+textarea {
+  border-radius: .375rem
+}
+
+input:focus,
+select:focus {
+  outline: .125rem solid var(--accent);
+  outline-offset: .0625rem;
+}
+
+input:disabled,
+select:disabled {
+  opacity: .5;
+  cursor: not-allowed;
 }
