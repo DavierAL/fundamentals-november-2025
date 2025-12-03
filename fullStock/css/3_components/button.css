@@ -13,6 +13,8 @@
     color: var(--primary-foreground);
     background-color: var(--primary-background);
     cursor: pointer;
+
+    transition: 200ms ease-in-out;
 }
 
 .button svg {
@@ -24,6 +26,7 @@
 
 .button:hover {
     background-color: var(--primary-background-hover);
+
 }
 
 /* .button:disabled {
@@ -49,6 +52,7 @@
 
 .button--outline:hover {
     background-color: var(--muted-background);
+
 }
 
 .button--ghost {
@@ -78,6 +82,7 @@
     padding: 0.75rem 2rem;
     border-radius: 0.5rem;
     font-size: 1rem;
+    transition: 200ms ease-in-out;
 }
 
 .button--xl svg {
