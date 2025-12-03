@@ -6,6 +6,7 @@
 .product-details__img {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: var(--muted-background);
     border-radius: .75rem;
     align-self: flex-start;
