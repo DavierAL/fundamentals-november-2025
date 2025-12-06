@@ -1,8 +1,9 @@
 .quality__section {
-    background-color: rgba(0, 0, 85, 0.02);
+    background-color: var(--muted-background);
     padding-top: 3rem;
     padding-bottom: 3rem;
     border-bottom: 1px solid var(--separator);
+
 }
 
 .quality__container {

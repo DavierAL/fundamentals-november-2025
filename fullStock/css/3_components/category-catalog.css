@@ -1,12 +1,14 @@
 .category-products {
     max-width: 80rem;
-    margin: 0 auto;
+    margin: 2rem auto;
+    border-bottom: 1px solid var(--separator);
+    padding-bottom: 2rem;
 }
 
 .category-catalog-header {
     border-bottom: 1px solid var(--separator);
-    padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .category-catalog__title {
