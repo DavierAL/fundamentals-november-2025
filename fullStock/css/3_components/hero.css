@@ -29,7 +29,7 @@
 .hero__title, .hero__text, .hero__button {
     opacity: 0;
     animation-name: fadeInUp;
-    animation-duration: 0.8s;
+    animation-duration: 1s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
