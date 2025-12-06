@@ -31,5 +31,6 @@
 @import url('3_components/product-details.css');
 @import url('3_components/checkout-form.css');
 @import url('3_components/content.css');
+@import url('3_components/order-confirmation.css');
 
 @import url('4_utilities/utilities.css');
