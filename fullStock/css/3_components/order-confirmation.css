@@ -1,0 +1,38 @@
+.order-confirmation__title {
+    color: var(--accent-foreground);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.order-confirmation__text {
+    color: var(--foreground);
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.order-confirmation__description {
+    color: var(--muted-foreground);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+.order-code {
+    color: var(--foreground);
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+
+.order-code__number {
+    color: var(--accent-foreground);
+    font-size: 1.75rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+}
